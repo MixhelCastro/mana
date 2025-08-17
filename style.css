@@ -1,0 +1,140 @@
+body {
+    background-color: #008080;
+    margin: 0;
+    padding: 0;
+    font-family: 'playfair-display-regular', serif;
+}
+
+/* Textos */
+.subtitle, .subtitle2, .subtitle3, .title {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 90%;
+}
+
+.subtitle {
+    font-size: 23px;
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subtitle2 {
+    font-size: 23px;
+    color: #ffffff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subtitle3 {
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: -0.8rem;
+    margin-bottom: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title {
+    font-size: 1.7rem;
+    color: #ffb700;
+    font-family: 'great-vibes-regular', cursive;
+}
+
+/* Imagem */
+.gif {
+    display: block;
+    margin: 16px auto;
+    border-radius: 20px;
+    max-width: 200px;
+    width: 90%;
+    height: auto;
+}
+
+/* Botão */
+.button {
+    display: block;
+    margin: 12px auto;
+    background-color: #008080;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.button img {
+    width: 64px;
+    height: auto;
+}
+.button img:hover {
+    width: 48px;
+    transition: width 0.3s ease;
+    filter: brightness(0.9);
+    
+    height: auto;
+}
+p {
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 10px; /* respira nas laterais */
+}
+/* Ajustes para telas maiores */
+@media (min-width: 768px) {
+    .title { font-size: 40px; }
+    .subtitle { font-size: 20px; }
+    .subtitle2 { font-size: 22px; }
+    .subtitle3 { font-size: 18px; 
+    margin-top: -0.8rem;
+    margin-bottom: 3rem;
+    }
+    .gif {
+        max-width: 350px;
+    }
+
+    .button img {
+        width: 80px;
+    }
+}
+
+/* Responsividade para mobile médio (375px a 430px) */
+@media (max-width: 540px) {
+    .title { font-size: 1.5rem; }
+    .subtitle { font-size: 15px; }
+    .subtitle2 { font-size: 16px; }
+    .subtitle3 { font-size: 13px;
+    margin-top: -0.8rem;
+    margin-bottom: 3rem; 
+    }
+    .gif { max-width: 170px; }
+    .button img { width: 40px; }
+    body { padding: 8px; }
+}
+.slideshow-wrapper {
+  max-width: 720px;
+  width: 95%;
+  margin: 18px auto;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.slideshow {
+  display: flex;
+  transition: transform 0.45s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  object-fit: cover;
+  display: block;
+  border-radius: 18px;
+}
+
+@media (max-width: 480px) {
+  .slide img {
+    max-height: 50vh;
+    border-radius: 14px;
+  }
+}
